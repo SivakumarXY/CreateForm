@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Visit Details Form</title>
+
+
+    <!-- createLinked -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+    <main class="wholeForm">
+
+        <h1>Enter Your Details & Health Problems</h1>
+
+
+        <form>
+
+
+            <div class="group-form">
+
+                <label for="fullName">Full Name</label>
+
+                <input type="text" id="fullName" name="name" required>
+
+            </div>
+
+
+
+
+            <div class="group-form">
+
+                <label for="age">Your Age</label>
+
+                <input type="number" id="age" name="age" required>
+
+            </div>
+
+
+
+
+            <div class="group-form">
+
+                <label for="mobileNumber">Mobile Number</label>
+
+                <input type="number" id="mobileNumber" name="mobileNumber" required>
+
+            </div>
+
+            <div class="group-form ">
+
+                <label for="email">Email</label>
+
+                <input type="email" id="email" name="email" required>
+
+            </div>
+
+            <fieldset class="spanall">
+                <legend>
+                    Gender
+                </legend>
+
+                <div class="form-group">
+                    <input type="radio" id="general" name="query" value="getValue" required>
+                    <label for="general">Male</label>
+
+
+
+                </div>
+                <div class="form-group">
+
+                    <input type="radio" id="general" name="query" value="getValues" required>
+                    <label for="general">Female</label>
+
+
+                </div>
+                <div class="form-group">
+
+                    <input type="radio" id="general" value="getValued" name="query" required>
+                    <label for="general">Others</label>
+
+
+                </div>
+            </fieldset>
+
+
+            <div class="group-form">
+
+                <label for="message">Message <button type="button" id="voiceBtn">🎤 Speak</button>
+                </label>
+
+                <textarea name="message" id="message" required></textarea>
+            </div>
+
+            <button>Submit</button>
+
+
+        </form>
+    </main>
+
+</body>
+
+</html>

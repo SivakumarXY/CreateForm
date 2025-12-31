@@ -1,0 +1,73 @@
+body {
+
+    font-family: "Roboto", sans-serif;
+
+}
+
+@layer layout {
+
+    .spanall {
+
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+    }
+}
+
+@layer form {
+
+    .wholeForm {
+        background-color: #F5F5F5;
+        color: black;
+        border-radius: 10px;
+        max-inline-size: 700px;
+        margin-inline: auto;
+    }
+
+    h1 {
+
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    form {
+
+        display: grid;
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .group-form {
+
+        display: grid;
+    }
+
+
+    .group-form:has([required]) label {
+
+        display: flex;
+        gap: 1ch;
+
+        &::after {
+
+            color: red;
+            content: "*";
+        }
+    }
+
+    input {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: .75em 1.5em;
+        margin-top: 10px;
+
+    }
+
+    fieldset {
+
+        border: 0;
+        padding: 0;
+    }
+
+}
